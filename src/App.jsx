@@ -6,10 +6,19 @@ function App() {
 
   return (
     <>
+    <div className='testdiv'>
       <h1>Landing page</h1>
-      <h2 className='test-roboto'>Roboto regular</h2>
-      <h2 className='test-roboto-bold'>Roboto bold</h2>
-      <h2 className='test-roboto-italic'>Roboto italic</h2>
+      <h2>Test de h2</h2>
+      <h3>test de  h3</h3>
+      
+      <button>Test común</button>
+      <button className='variant-btn'>Test variant</button>
+      </div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">sobre nosotros</a></li>
+        <li><a href="#">contacto</a></li>
+      </ul>
     </>
   )
 }
