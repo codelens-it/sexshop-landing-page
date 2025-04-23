@@ -46,14 +46,23 @@ Declaración de fuente:
   --color-content: #bfbfbf;       /* Texto secundario */
   --font-family-text: 'Aboreto';  /*Fuente para títulos y navbar*/
   --font-family-content: 'Roboto';   /*Fuente para todo el resto del texto*/
-  --font-size-text: clamp(1.875rem, 1.7434rem + 0.6579vw, 2.8125rem); /*fuente para h1*/
-  --font-size-subtext: clamp(1.5625rem, 1.4309rem + 0.6579vw, 2.5rem); /*fuente para h2*/
+  --font-size-text: clamp(1.875rem, 1.7434rem + 0.6579vw, 2.8125rem); 
+  --font-size-subtext: clamp(1.5625rem, 1.4309rem + 0.6579vw, 2.5rem); 
   --font-size-h3:  clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem);
-  --font-size-content: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem); /*fuente para párrafos y buttons*/
-  --font-size-link: clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem); /*fuente span, links, navbar y footer*/
+  --font-size-content: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem); 
+  --font-size-link: clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem); 
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+}
 
 h1 {
   font-family: var(--font-family-text);
@@ -98,7 +107,7 @@ i {
   width: 40px;
 }
 
-
+/*MOVER*/
 button {
   font-family: var(--font-family-content);
   font-size: var(--font-size-content);
@@ -114,7 +123,32 @@ button.variant-btn {
   background-color: var(--fucsia-variant);
 }
 
+.item-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 
-.testdiv {
-  background-color: var(--color-bg);
+.container-size {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 50px 10px;
+}
+
+/*TABLET*/
+@media (min-width: 768px ) {
+  .section {
+    padding: 50px 36px;
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 1440px ) {
+  .section {
+    padding: 70px 50px;
+  }
 }
