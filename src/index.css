@@ -1,68 +1,154 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+/*
+Declaración de fuente:
+*/
+
+@font-face {
+  font-family: 'Aboreto';
+  src: url('./assets/fonts/aboreto/Aboreto-Regular.woff2') format('woff2');
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
 }
 
-body {
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-BoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+:root {
+  --color-bg: #000000;            /* Fondo principal oscuro */
+  --fucsia-transparent:  rgba(255, 0, 111, 0.25)   ;
+  --fucsia-variant: rgba(255, 0, 111, 0.2);
+  --color-text: #ffffff;          /* Texto principal */
+  --color-content: #bfbfbf;       /* Texto secundario */
+  --font-family-text: 'Aboreto';  /*Fuente para títulos y navbar*/
+  --font-family-content: 'Roboto';   /*Fuente para todo el resto del texto*/
+  --font-size-text: clamp(1.875rem, 1.7434rem + 0.6579vw, 2.8125rem); 
+  --font-size-subtext: clamp(1.5625rem, 1.4309rem + 0.6579vw, 2.5rem); 
+  --font-size-h3:  clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem);
+  --font-size-content: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem); 
+  --font-size-link: clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem); 
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  background-color: var(--color-bg);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-text);
+  color: var(--color-text);
 }
 
+h2 {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-subtext);
+  color: var(--color-text);
+}
+
+h3 {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-h3);
+  color: var(--color-text);
+}
+
+p {
+  font-family: var(--font-family-content);
+  font-size: var(--font-size-content);
+  color: var(--color-content);
+}
+
+span {
+  font-family: var(--font-family-content);
+  font-size: var(--font-size-link);
+  color: var(--color-content);
+}
+
+
+a {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-link);
+  color: var(--color-content);
+  text-decoration: none;
+}
+
+i {
+  height: 40px;
+  width: 40px;
+}
+
+/*MOVER*/
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-family: var(--font-family-content);
+  font-size: var(--font-size-content);
+  color: var(--color-content);
+  border-radius: 20px;
+  /*filter: drop-shadow(3px 5px 5px var(--color-bg));*/
+  background-color: var(--color-bg);
+  border:none;
+  padding: 17px 33px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+button.variant-btn {
+  background-color: var(--fucsia-variant);
+}
+
+.item-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container-size {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 50px 10px;
+}
+
+/*TABLET*/
+@media (min-width: 768px ) {
+  .section {
+    padding: 50px 36px;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+}
+
+/*DESKTOP*/
+@media (min-width: 1440px ) {
+  .section {
+    padding: 70px 50px;
   }
 }
