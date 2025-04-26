@@ -68,6 +68,7 @@ h1 {
   font-family: var(--font-family-text);
   font-size: var(--font-size-text);
   color: var(--color-text);
+  font-weight: 400;
 }
 
 h2 {
@@ -105,22 +106,6 @@ a {
 i {
   height: 40px;
   width: 40px;
-}
-
-/*MOVER*/
-button {
-  font-family: var(--font-family-content);
-  font-size: var(--font-size-content);
-  color: var(--color-content);
-  border-radius: 20px;
-  /*filter: drop-shadow(3px 5px 5px var(--color-bg));*/
-  background-color: var(--color-bg);
-  border:none;
-  padding: 17px 33px;
-}
-
-button.variant-btn {
-  background-color: var(--fucsia-variant);
 }
 
 .item-center {
