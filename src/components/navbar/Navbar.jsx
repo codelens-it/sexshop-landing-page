@@ -15,7 +15,7 @@ const Navbar = () => {
   }, [isDesktop])
 
   return (
-    <nav id='navbar' className={!isDesktop && !isMenuInvisible && 'open-menu'}>
+    <nav id='navbar' className={`${!isDesktop && !isMenuInvisible && 'open-menu'}`}>
       <div className='logo-container'>
         <img className='nav-logo' src="/logo/logo.svg" alt="Logo" />
       </div>
