@@ -58,10 +58,14 @@
   transition: all ease 0.3s;
 }
 
+.menu-list-container.invisible {
+  display: none;
+}
+
 
 /*+TABLET */
 
-@media (min-width: 768px ) {
+@media (min-width: 1440px ) {
   .burger-menu {
     display: none;
   }

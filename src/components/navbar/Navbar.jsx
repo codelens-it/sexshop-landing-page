@@ -1,10 +1,20 @@
 import './navbar.css'
 import { useWindowSize } from '../../hooks/useWindowSize';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
 
-  const sizes = useWindowSize()
-  console.log(sizes)
+  const { isDesktop } = useWindowSize()
+  const [isMenuInvisible, setIsMenuInvisible] = useState(false)
+
+  useEffect(() => {
+    if(isDesktop){
+      setIsMenuInvisible(false)
+    }
+    else setIsMenuInvisible(true)
+    
+    return
+  }, [isDesktop])
 
   return (
     <nav id='navbar'>
@@ -12,7 +22,7 @@ const Navbar = () => {
         <img className='nav-logo' src="/logo/logo.svg" alt="Logo" />
       </div>
       <button className='menu-button'><img src='/icons/burger-menu.svg' alt='icono de menú' className='burger-menu' /></button>
-      <div className="menu-list-container">
+      <div className={`menu-list-container ${isMenuInvisible && 'invisible'}`}>
         <ul className="menu-list">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Sobre nosotros</a></li>
