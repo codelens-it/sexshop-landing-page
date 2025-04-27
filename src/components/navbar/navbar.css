@@ -13,7 +13,7 @@
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .menu-list {
@@ -58,6 +58,7 @@
   transition: all ease 0.3s;
 }
 
+
 /*+TABLET */
 
 @media (min-width: 768px ) {
@@ -65,8 +66,14 @@
     display: none;
   }
 
+  .menu-list-container {
+    height: auto;
+    width: auto;
+    position: static;
+  }
+
   .menu-list {
     flex-direction: row;
-
+    gap: 0;
   }
 }
