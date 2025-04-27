@@ -12,17 +12,14 @@ const Navbar = () => {
       setIsMenuInvisible(false)
     }
     else setIsMenuInvisible(true)
-
-    return
   }, [isDesktop])
 
-
   return (
-    <nav id='navbar'>
-      <div className={`logo-container ${!isDesktop && !isMenuInvisible && 'open-menu'}`}>
+    <nav id='navbar' className={!isDesktop && !isMenuInvisible && 'open-menu'}>
+      <div className='logo-container'>
         <img className='nav-logo' src="/logo/logo.svg" alt="Logo" />
       </div>
-      <button className='menu-button' onClick={() => setIsMenuInvisible(!isMenuInvisible)}>
+      <button className={`menu-button ${!isMenuInvisible && 'open-menu'}`} onClick={() => setIsMenuInvisible(!isMenuInvisible)}>
         <img src={`/icons/${isMenuInvisible ? 'burger-menu.svg' : 'close-menu.svg'}`} alt='icono de menú' className='burger-menu' />
       </button>
       <div className={`menu-list-container ${isMenuInvisible && 'invisible'}`}>
@@ -33,7 +30,6 @@ const Navbar = () => {
           <li><a href="#">Contacto</a></li>
         </ul>
       </div>
-
     </nav>
   )
 }
