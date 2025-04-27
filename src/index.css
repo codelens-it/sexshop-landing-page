@@ -56,11 +56,11 @@ Declaración de fuente:
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
   background-color: var(--color-bg);
 }
 
@@ -97,13 +97,13 @@ span {
 
 
 a {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-text);
   font-size: var(--font-size-link);
   color: var(--color-content);
   text-decoration: none;
 }
 
-i {
+button img {
   height: 40px;
   width: 40px;
 }
