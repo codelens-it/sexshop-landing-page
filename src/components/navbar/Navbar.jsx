@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav id='navbar'>
-      <div className={`logo-container ${!isMenuInvisible && 'open-menu'}`}>
+      <div className={`logo-container ${!isDesktop && !isMenuInvisible && 'open-menu'}`}>
         <img className='nav-logo' src="/logo/logo.svg" alt="Logo" />
       </div>
       <button className='menu-button' onClick={() => setIsMenuInvisible(!isMenuInvisible)}>
