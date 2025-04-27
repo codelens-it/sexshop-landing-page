@@ -8,20 +8,23 @@ const Navbar = () => {
   const [isMenuInvisible, setIsMenuInvisible] = useState(false)
 
   useEffect(() => {
-    if(isDesktop){
+    if (isDesktop) {
       setIsMenuInvisible(false)
     }
     else setIsMenuInvisible(true)
-    
+
     return
   }, [isDesktop])
 
+
   return (
     <nav id='navbar'>
-      <div className='logo-container'>
+      <div className={`logo-container ${!isMenuInvisible && 'open-menu'}`}>
         <img className='nav-logo' src="/logo/logo.svg" alt="Logo" />
       </div>
-      <button className='menu-button'><img src='/icons/burger-menu.svg' alt='icono de menú' className='burger-menu' /></button>
+      <button className='menu-button' onClick={() => setIsMenuInvisible(!isMenuInvisible)}>
+        <img src={`/icons/${isMenuInvisible ? 'burger-menu.svg' : 'close-menu.svg'}`} alt='icono de menú' className='burger-menu' />
+      </button>
       <div className={`menu-list-container ${isMenuInvisible && 'invisible'}`}>
         <ul className="menu-list">
           <li><a href="#">Inicio</a></li>
