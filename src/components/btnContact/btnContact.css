@@ -9,7 +9,11 @@
     padding: 17px 33px;
     cursor: pointer;
     display: inline-block;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-10px); /* Mueve el botón hacia arriba */
 }
   
   
