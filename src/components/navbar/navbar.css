@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-bg);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 30px var(--fucsia-transparent);
+  border: 2px solid var(--fucsia-transparent);
 }
 
 #navbar.open-menu {
