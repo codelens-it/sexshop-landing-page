@@ -17,10 +17,10 @@ const Navbar = () => {
 
   return (
     <nav id='navbar'>
-      <div className='logo-container'>
+      <div className='logo-container open-menu'>
         <img className='nav-logo' src="/public/logo/logo.svg" alt="Logo" />
       </div>
-      <button><img src='/icons/burger-menu.svg' alt='icono de menú' className='burger-menu' /></button>
+      <button className='menu-button'><img src='/icons/burger-menu.svg' alt='icono de menú' className='burger-menu' /></button>
       <div className="menu-list-container">
         <ul className="menu-list">
           <li><a href="#">Inicio</a></li>

@@ -24,6 +24,17 @@
   gap: 30px;
 }
 
+.menu-button {
+  padding: 0;
+}
+
+.logo-container.open-menu {
+  position: relative;
+  top: 18svh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .logo-container {
   height: 80px;
   width: 80px;
