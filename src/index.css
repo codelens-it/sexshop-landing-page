@@ -108,6 +108,11 @@ button img {
   width: 40px;
 }
 
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
 .item-center {
   display: flex;
   justify-content: center;
