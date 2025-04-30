@@ -1,0 +1,49 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10%; 
+    left: 50%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background: rgba(0, 0, 0, 0.79); /* Fondo semitransparente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Asegúrate de que el loader esté sobre otros elementos */
+    flex-direction: column;
+}
+
+.loader picture img {
+    animation: vibrate 0.6s linear infinite; /* Animación continua de vibración */
+    width: 100px; /* Tamaño de la imagen del vibrador */
+    height: auto;
+}
+
+.loader-text {
+    margin-top: 20px;
+    color: var(--color-text); /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0); /* Empieza en su posición inicial */
+    }
+    20% {
+        transform: translateX(-5px); /* Desplazamiento hacia la izquierda */
+    }
+    40% {
+        transform: translateX(5px);  /* Desplazamiento hacia la derecha */
+    }
+    60% {
+        transform: translateX(-5px); /* Regresa a la izquierda */
+    }
+    80% {
+        transform: translateX(5px);  /* Regresa a la derecha */
+    }
+    100% {
+        transform: translateX(0); /* Termina en la posición inicial */
+    }
+}
