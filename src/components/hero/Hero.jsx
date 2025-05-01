@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import "./hero.css";
-import BtnContact from "../btnContact/BtnContact";
+import BtnContact from "@/components/btnContact/BtnContact";
 
 const Hero = () => {
     const heroRef = useRef(null);

@@ -14,8 +14,8 @@ const Footer = () => {
         <section className="footer-social-container">
           <span>Síguenos en nuestras redes</span>
           <div className="social-links">
-            <img className="icon" src="/social/facebook-icon.svg" alt="Botón de Facebook" />
-            <img className="icon" src="/social/instagram-icon.svg" alt="Botón de Instagram" />
+            <a href='#'><img className="icon" src="/social/facebook-icon.svg" alt="Botón de Facebook" /></a>
+            <a href='#'><img className="icon" src="/social/instagram-icon.svg" alt="Botón de Instagram" /></a>
           </div>
         </section>
         <nav className="footer-navbar">

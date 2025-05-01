@@ -1,5 +1,5 @@
 import './navbar.css'
-import { useWindowSize } from '../../hooks/useWindowSize';
+import { useWindowSize } from '@/hooks/useWindowSize';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {

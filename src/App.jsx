@@ -1,7 +1,7 @@
 import { useState, Suspense, lazy, useEffect } from 'react'
 import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Loader from './components/loader/Loader';
+import Navbar from '@/components/navbar/Navbar'
+import Loader from '@/components/loader/Loader';
 
 const Hero = lazy(() => import('./components/hero/Hero'));
 const About = lazy(() => import('./components/about/About'));

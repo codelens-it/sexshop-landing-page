@@ -1,5 +1,5 @@
 import "./about.css";
-import BtnContact from "../btnContact/BtnContact";
+import BtnContact from "@/components/btnContact/BtnContact";
 
 const About = () => {
     return (
