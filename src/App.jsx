@@ -1,22 +1,39 @@
-import { useState } from 'react'
+import { useState, Suspense, lazy, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero/Hero'
-import About from './components/about/About'
-import Footer from './components/footer/Footer'
 import Loader from './components/loader/Loader';
 
+const Hero = lazy(() => import('./components/hero/Hero'));
+const About = lazy(() => import('./components/about/About'));
+const Footer = lazy(() => import('./components/footer/Footer'));
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [showLoader, setShowLoader] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false)
+    }, 3000) 
+    return () => clearTimeout(timer)
+  }, [])
+
 
   return (
     <div>
-      {loading && <Loader />} {/* Muestra el loader mientras loading sea true */}
-      
       <Navbar/>
-    <Hero />
-      <About />
-    <Footer/>
+      <Suspense fallback={null}>
+        {showLoader ? (
+          <div className="full-page-loader">
+            <Loader />
+          </div>
+        ) : (
+          <>
+            <Hero />
+            <About />
+            <Footer />
+          </>
+        )}
+      </Suspense>
     </div>
   )
 }
