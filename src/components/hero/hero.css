@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
-    height: 550px;
+    height: 650px;
     padding: 50px 10px;
 }
 
@@ -34,6 +34,13 @@
     text-align: center;
     width: 100%;
     height: auto;
+    overflow: hidden;
+}
+
+.hero-container h1,
+.hero-container span,
+.hero-btn {
+  opacity: 0; 
 }
 
 .hero-btn {
@@ -44,14 +51,14 @@
 
 @media (min-width: 768px) {
     .hero {
-      height: 600px;
+      height: 700px;
     }
 }
   
 
 @media (min-width: 1024px) {
     .hero {
-        height: 800px;
+        height: 900px;
     }
 
     .hero-container {
