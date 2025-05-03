@@ -5,7 +5,9 @@ import Loader from '@/components/loader/Loader';
 
 const Hero = lazy(() => import('./components/hero/Hero'));
 const About = lazy(() => import('./components/about/About'));
+const Slider = lazy(() => import('./components/slider/Slider'));
 const Footer = lazy(() => import('./components/footer/Footer'));
+
 
 function App() {
   const [showLoader, setShowLoader] = useState(true)
@@ -30,6 +32,10 @@ function App() {
           <>
             <Hero />
             <About />
+            <Slider
+              autoPlay={true}
+              interval={4000}
+            />
             <Footer />
           </>
         )}
