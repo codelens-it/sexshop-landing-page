@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import "./about.css";
-import BtnContact from "../btnContact/BtnContact";
+import BtnContact from "@/components/btnContact/BtnContact";
 
 gsap.registerPlugin(ScrollTrigger);
 
