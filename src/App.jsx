@@ -6,6 +6,7 @@ import Loader from '@/components/loader/Loader';
 const Hero = lazy(() => import('./components/hero/Hero'));
 const About = lazy(() => import('./components/about/About'));
 const Slider = lazy(() => import('./components/slider/Slider'));
+const Contact = lazy(() => import('./components/contact/Contact'));
 const Footer = lazy(() => import('./components/footer/Footer'));
 
 
@@ -36,6 +37,7 @@ function App() {
               autoPlay={true}
               interval={4000}
             />
+            <Contact />
             <Footer />
           </>
         )}
