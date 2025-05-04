@@ -1,5 +1,5 @@
 :root {
-    --slider-mobile-height: clamp(250px, 60vw, 300px);
+    --slider-mobile-height:  350px;
     --slider-tablet-height: clamp(300px, 50vh, 350px);
     --slider-desktop-height: clamp(350px, 60vh, 420px);
 }
@@ -37,6 +37,7 @@
     object-fit: cover; 
     object-position: center; 
     display: block;
+    will-change: transform;
   }
   
   /* Bullets */
@@ -51,8 +52,8 @@
   }
   
   .bullet {
-    width: clamp(8px, 2vw, 12px);
-    height: clamp(8px, 2vw, 12px);
+    width: clamp(12px, 2vw, 14px);
+    height: clamp(12px, 2vw, 14px);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.5);
     border: none;
