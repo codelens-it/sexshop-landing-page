@@ -1,7 +1,8 @@
-import { useState, Suspense, lazy, useEffect } from 'react'
+import { useState, Suspense, lazy, useEffect, useContext } from 'react'
 import './App.css'
 import Navbar from '@/components/navbar/Navbar'
 import Loader from '@/components/loader/Loader';
+import { CatalogProvider } from './context/catalogContext';
 
 const Hero = lazy(() => import('./components/hero/Hero'));
 const About = lazy(() => import('./components/about/About'));
@@ -31,6 +32,7 @@ function App() {
           </div>
         ) : (
           <>
+          <CatalogProvider>
             <Hero />
             <About />
             <Slider
@@ -39,6 +41,7 @@ function App() {
             />
             <Contact />
             <Footer />
+            </CatalogProvider>
           </>
         )}
       </Suspense>
