@@ -1,9 +1,9 @@
 import { createContext } from 'react'
-import { products } from '@/data/products.json'
+import products from '@/data/products.json' 
 
-const CatalogContext = createContext(null)
+export const CatalogContext = createContext(null)
 
-export const CatalogProvider = () => {
+export const CatalogProvider = ({ children }) => {
 
   const getProductCardList = () => {
     const cardList = products.map((product) => {
@@ -14,12 +14,13 @@ export const CatalogProvider = () => {
         image: product.images[0]
       }
     })
+    console.log(cardList)
     return cardList
   }
 
   const getProductById = (id) => {
-    console.log(id)
-    return
+    const card = products.find((card) => card.id === id)
+    return card
   }
 
   const getProductsByCategory = (category) => {
@@ -30,7 +31,8 @@ export const CatalogProvider = () => {
   return(
     <CatalogContext.Provider value={
       {getProductById,
-      getProductsByCategory
+      getProductsByCategory,
+      getProductCardList
     }}>
       {children}
     </CatalogContext.Provider>
