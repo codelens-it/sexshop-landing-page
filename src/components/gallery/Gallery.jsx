@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { CatalogContext } from '@/context/CatalogContext'
 
 const Gallery = () => {
-  const { getProductCardList } = useContext(CatalogContext)
-  const test = getProductCardList()
+  const { getProductsByCategory } = useContext(CatalogContext)
+  const test = getProductsByCategory({})
 
   console.log(test)
   return (<div className="section">

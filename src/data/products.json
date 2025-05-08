@@ -59,7 +59,7 @@
     { "img": "/lubricante1.svg", "alt": "Aceite lubricante" },
     { "img": "/lubricante2.svg", "alt": "Imagen secundaria del lubricante" }
   ],
-  "category": ["aceites y lubricantes"]
+  "category": ["lubricantes"]
 },
 {
   "id": 4,
@@ -76,7 +76,7 @@
     { "img": "/tanga1.svg", "alt": "Tanga de encaje" },
     { "img": "/tanga2.svg", "alt": "Imagen secundaria de la tanga" }
   ],
-  "category": ["lencería"]
+  "category": ["lenceria"]
 },
 {
   "id": 5,
@@ -97,7 +97,7 @@
     { "img": "/consolador1.svg", "alt": "Consolador realista" },
     { "img": "/consolador2.svg", "alt": "Imagen secundaria del consolador" }
   ],
-  "category": ["consoladores"]
+  "category": ["consoladores", "anal"]
 },
 {
   "id": 6,
