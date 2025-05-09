@@ -14,8 +14,8 @@
 "price": "26000",
 "inStock": true,
 "images": [
-  { "img": "/img.svg", "alt": "Imagen principal"},
-  { "img": "/img2.svg", "alt": "Imagen secundaria"}
+  { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+  { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
 ],
 "category": ["anal"]
 },
@@ -35,8 +35,8 @@
   "price": "35000",
   "inStock": true,
   "images": [
-    { "img": "/vibrador1.svg", "alt": "Imagen principal del vibrador" },
-    { "img": "/vibrador2.svg", "alt": "Imagen secundaria del vibrador" }
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal del vibrador" },
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria del vibrador" }
   ],
   "category": ["vibradores"]
 },
@@ -56,8 +56,8 @@
   "price": "1200",
   "inStock": true,
   "images": [
-    { "img": "/lubricante1.svg", "alt": "Aceite lubricante" },
-    { "img": "/lubricante2.svg", "alt": "Imagen secundaria del lubricante" }
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["lubricantes"]
 },
@@ -73,8 +73,8 @@
   "price": "4500",
   "inStock": true,
   "images": [
-    { "img": "/tanga1.svg", "alt": "Tanga de encaje" },
-    { "img": "/tanga2.svg", "alt": "Imagen secundaria de la tanga" }
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["lenceria"]
 },
@@ -94,8 +94,8 @@
   "price": "32000",
   "inStock": true,
   "images": [
-    { "img": "/consolador1.svg", "alt": "Consolador realista" },
-    { "img": "/consolador2.svg", "alt": "Imagen secundaria del consolador" }
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["consoladores", "anal"]
 },
@@ -115,8 +115,8 @@
   "price": "15000",
   "inStock": true,
   "images": [
-    { "img": "/accesorio1.svg", "alt": "Set de bondage de cuero" },
-    { "img": "/accesorio2.svg", "alt": "Imagen secundaria del set de bondage" }
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["accesorios"]
 }
