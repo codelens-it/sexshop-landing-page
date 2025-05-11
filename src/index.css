@@ -83,6 +83,12 @@ h3 {
   color: var(--color-text);
 }
 
+h4 {
+  font-family: var(--font-family-content);
+  font-size: var(--font-size-content);
+  color: var(--color-text);
+}
+
 p {
   font-family: var(--font-family-content);
   font-size: var(--font-size-content);

@@ -1,0 +1,123 @@
+[{
+"id": 1,
+"name": "Plug anal metal heart S ST",
+"description": "Su forma cónica es ideal para estimularte, además podes jugar con la temperatura calentándolo o enfriándolo. Esto añadirá excitación en tus fantasías eróticas. La punta delgada facilita la inserción del producto ayudando a los que no tienen tanta experiencia.",
+"measurements": {
+  "type": "dimensions",
+  "dimensions": {
+    "width": "6,5cm",
+    "height": "",
+    "thickness": "2,5cm"
+  }
+},
+"features": ["Material: aleación de aluminio ultra-liso", "Engarce en la base, emulando una gema en forma de corazon.", "Sumergible", "Colores disponibles: Rojo, negro, azul, violeta"],
+"price": "26000",
+"inStock": true,
+"images": [
+  { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+  { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+],
+"category": ["anal"]
+},
+{
+  "id": 2,
+  "name": "Vibrador G-Spot Dual Pulse",
+  "description": "El vibrador G-Spot Dual Pulse está diseñado para ofrecer estimulación simultánea tanto del punto G como del clítoris. Con 10 intensidades de vibración y una forma ergonómica, ofrece una experiencia de placer personalizada.",
+  "measurements": {
+    "type": "dimensions",
+    "dimensions": {
+      "width": "4cm",
+      "height": "20cm",
+      "thickness": "3cm"
+    }
+  },
+  "features": ["Silicona médica hipoalergénica", "Resistente al agua", "10 modos de vibración", "Recargable por USB"],
+  "price": "35000",
+  "inStock": true,
+  "images": [
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal del vibrador" },
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria del vibrador" }
+  ],
+  "category": ["vibradores"]
+},
+{
+  "id": 3,
+  "name": "Aceite Lubricante Natural Aloe Vera",
+  "description": "Lubricante a base de aloe vera, ideal para una experiencia suave y natural. Hidrata la piel mientras proporciona una lubricación duradera para mayor comodidad.",
+  "measurements": {
+    "type": "dimensions",
+    "dimensions": {
+      "width": "5cm",
+      "height": "10cm",
+      "thickness": "5cm"
+    }
+  },
+  "features": ["100% ingredientes naturales", "Libre de parabenos", "Ideal para piel sensible", "Compatible con condones de látex"],
+  "price": "1200",
+  "inStock": true,
+  "images": [
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+  ],
+  "category": ["lubricantes"]
+},
+{
+  "id": 4,
+  "name": "Tanga de encaje rosa con detalles en satin",
+  "description": "Tanga de encaje fina con detalles en satin. Su diseño elegante y sexy es perfecto para ocasiones especiales, brindando confort y estilo al mismo tiempo.",
+  "measurements": {
+    "type": "size",
+    "sizes": ["S", "M", "L", "XL"]
+  },
+  "features": ["Encaje de alta calidad", "Ajuste cómodo y elástico", "Colores disponibles: Rosa, negro", "Perfecto para la noche de bodas"],
+  "price": "4500",
+  "inStock": true,
+  "images": [
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+  ],
+  "category": ["lenceria"]
+},
+{
+  "id": 5,
+  "name": "Consolador de silicona suave - Realistic Feel",
+  "description": "Este consolador realista está diseñado para imitar la sensación de la piel humana, brindando una experiencia natural y placentera. Su base sólida permite un uso seguro en diversas posiciones.",
+  "measurements": {
+    "type": "dimensions",
+    "dimensions": {
+      "width": "5cm",
+      "height": "20cm",
+      "thickness": "4cm"
+    }
+  },
+  "features": ["Silicona médica suave al tacto", "Flexible pero firme", "Base de succión para uso manos libres", "Recargable"],
+  "price": "32000",
+  "inStock": true,
+  "images": [
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+  ],
+  "category": ["consoladores", "anal"]
+},
+{
+  "id": 6,
+  "name": "Accesorio de Bondage Set (Cuero)",
+  "description": "Este set de bondage incluye muñecas, tobillos y collar de cuero ajustables para una experiencia más intensa. Perfecto para quienes buscan explorar nuevas sensaciones de control y entrega.",
+  "measurements": {
+    "type": "dimensions",
+    "dimensions": {
+      "width": "2cm",
+      "height": "10cm",
+      "thickness": "2cm"
+    }
+  },
+  "features": ["Cuero sintético de alta calidad", "Ajustable y cómodo", "Ideal para principiantes y experimentados", "Fácil de limpiar"],
+  "price": "15000",
+  "inStock": true,
+  "images": [
+    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+  ],
+  "category": ["accesorios"]
+}
+]
