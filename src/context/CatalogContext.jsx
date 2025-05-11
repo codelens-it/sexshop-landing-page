@@ -1,9 +1,12 @@
-import { createContext } from 'react'
+import { createContext, useState, useEffect } from 'react'
 import products from '@/data/products.json'
 
 export const CatalogContext = createContext(null)
 
 export const CatalogProvider = ({ children }) => {
+
+  const [currentCategory, setCurrentCategory] = useState(null)
+  const [cardList, setCardList] = useState([])
 
   const getProductCardList = () => {
     const cardList = products.map((product) => {
@@ -23,7 +26,6 @@ export const CatalogProvider = ({ children }) => {
     const card = products.find((card) => card.id === id)
     return card
   }
-
 
   const getProductsByCategory = ({ category = null, limit = 6, page = 1 }) => {
     const allCards = getProductCardList()
@@ -48,12 +50,21 @@ export const CatalogProvider = ({ children }) => {
     }
   }
 
+useEffect(() => {
+  const cardData = getProductsByCategory({ category: currentCategory});
+  setCardList(cardData);
+  return
+}, [currentCategory])
+
   return (
     <CatalogContext.Provider value={
       {
         getProductById,
         getProductsByCategory,
-        getProductCardList
+        getProductCardList,
+        currentCategory,
+        setCurrentCategory,
+        cardList
       }}>
       {children}
     </CatalogContext.Provider>

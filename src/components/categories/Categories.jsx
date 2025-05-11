@@ -1,14 +1,31 @@
 import './categories.css'
+import { useContext } from 'react'
+import { CatalogContext } from '../../context/catalogContext'
+
 
 export const Categories = () => {
 
+  const { currentCategory, setCurrentCategory } = useContext(CatalogContext)
+
   const categoryList = ['todos', "accesorios", "anal", "consoladores", "vibradores", "lubricantes", "lenceria"]
 
-  return(
-  <div className='category-list-container'>
-    {categoryList.map((category, i) => {
-      return <button className='category-btn' key={i}>{category}</button>
-    })}
+  return (
+    <div className='category-list-container'>
+      {categoryList.map((category, i) => {
+  return (
+    <button
+      key={i}
+      className={`category-btn ${
+        (category === 'todos' && currentCategory == null) || category === currentCategory
+          ? 'selected'
+          : ''
+      }`}
+      onClick={() => setCurrentCategory(category === 'todos' ? null : category)}
+    >
+      {category}
+    </button>
+  );
+})}
 
-  </div>)
+    </div>)
 }

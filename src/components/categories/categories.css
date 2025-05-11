@@ -28,3 +28,7 @@
   background-color: var(--fucsia-variant);
   transform: translateY(-10px);
 }
+
+.selected {
+  background-color: var(--fucsia-variant);
+}

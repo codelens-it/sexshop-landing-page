@@ -5,8 +5,8 @@ import { GalleryCard } from "@/components/GalleryCard/GalleryCard";
 import { Categories } from '../categories/Categories';
 
 const Gallery = () => {
-  const { getProductsByCategory } = useContext(CatalogContext)
-  const cardData = getProductsByCategory({})
+  const { cardList } = useContext(CatalogContext)
+  const cardData = cardList
   const cards = cardData.data
 
   return (<div className="section gallery">
