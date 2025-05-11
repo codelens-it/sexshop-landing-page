@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import products from '@/data/products.json' 
+import products from '@/data/products.json'
 
 export const CatalogContext = createContext(null)
 
@@ -24,13 +24,13 @@ export const CatalogProvider = ({ children }) => {
     return card
   }
 
-  
-  const getProductsByCategory = ({category = null, limit = 6, page = 1}) => {
-    const allCards= getProductCardList()
-  
-    const filteredCards = category 
-    ? allCards.filter((card) => card.category.includes(category))
-    : allCards
+
+  const getProductsByCategory = ({ category = null, limit = 6, page = 1 }) => {
+    const allCards = getProductCardList()
+
+    const filteredCards = category
+      ? allCards.filter((card) => card.category.includes(category))
+      : allCards
 
     const totalCards = filteredCards.length
     const totalPages = Math.ceil(totalCards / limit)
@@ -48,12 +48,13 @@ export const CatalogProvider = ({ children }) => {
     }
   }
 
-  return(
+  return (
     <CatalogContext.Provider value={
-      {getProductById,
-      getProductsByCategory,
-      getProductCardList
-    }}>
+      {
+        getProductById,
+        getProductsByCategory,
+        getProductCardList
+      }}>
       {children}
     </CatalogContext.Provider>
   )

@@ -1,18 +1,17 @@
-
 .gallery-card {
   height: 378px;
   width: 250px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0px 0px 9px 1px var(--fucsia-variant);
--moz-box-shadow: 0px 0px 9px 1px var(--fucsia-variant);
-box-shadow: 0px 0px 9px 1px var(--fucsia-variant);
+  -moz-box-shadow: 0px 0px 9px 1px var(--fucsia-variant);
+  box-shadow: 0px 0px 9px 1px var(--fucsia-variant);
 }
 
 .card-img {
   height: 230px;
   width: 100%;
- display: flex;
-      justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card-img img {
@@ -42,12 +41,30 @@ box-shadow: 0px 0px 9px 1px var(--fucsia-variant);
 }
 
 
-.card-description  p {
-  --var-lines: 4;
+.card-description p {
+  --var-lines: 3;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-clamp: var(--var-lines);
   -webkit-line-clamp: var(--var-lines);
   overflow: hidden;
-  
+
+}
+
+.card-description h4 {
+  --var-lines: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: var(--var-lines);
+  -webkit-line-clamp: var(--var-lines);
+  overflow: hidden;
+
+}
+
+.card-cta {
+  color: var(--color-text);
+  padding: 10px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  display: inline-block;
 }
