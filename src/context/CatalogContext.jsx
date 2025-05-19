@@ -24,7 +24,7 @@ export const CatalogProvider = ({ children }) => {
 
   const getProductById = (id) => {
     const card = products.find((card) => card.id === id)
-    return card
+    return card.length > 0 ? card : null
   }
 
   const getProductsByCategory = ({ category = null, limit = 6, page = 1 }) => {
