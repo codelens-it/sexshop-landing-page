@@ -1,38 +1,50 @@
 import './productModal.css'
-import { useState, useContext } from 'react'
-import CatalogContext from '@/context/CatalogContext.jsx'
+import { useState, useContext, useEffect, useRef } from 'react'
+import { CatalogContext } from '@/context/CatalogContext.jsx'
 
 
-const ProductModal = ({id, isOpen}) => {
+const ProductModal = () => {
 
+const { getProductById, currentId, setCurrentId } = useContext(CatalogContext)
+const [product, setProduct] = useState({})
+const modalRef = useRef(null)
 
-  /*
-- Definir onClose
-- Definir estado del producto
-*/
+useEffect(() => {
 
-const { getProductById } = useContext(CatalogContext)
+  if(currentId) {
+    const data = getProductById(currentId)
+    setProduct(data)
+    console.log('producto', product)
+    modalRef.current.show()
+  }
 
-const [product, setProduct] = useState(getProductById(id))
+return
+
+}, [currentId])
+
 
 const onClose = () => {
-// Cerrar modal
+setCurrentId(null)
+setProduct(null)
+modalRef.current.close()
 return 
 }
 
-if(!isOpen) return  
+
+if(!product) return
+
 
 else return (
-<div id='product-modal-container'>
-<dialog id='product-detail'>
-<h3></h3>
+<dialog id='product-modal-container' ref={modalRef}>
+<div id='product-detail'>
+<h3>hola</h3>
 <div>
   
 </div>
 <p>description</p>
 <button onClick={() => onClose()}><img src="/icons/close-menu.svg" alt="Cerrar modal" /></button>
-  </dialog>
   </div>
+  </dialog>
   )
 }
 

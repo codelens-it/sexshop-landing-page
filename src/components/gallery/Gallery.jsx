@@ -4,6 +4,7 @@ import { CatalogContext } from '@/context/CatalogContext'
 import { GalleryCard } from "@/components/GalleryCard/GalleryCard";
 import { Categories } from '../categories/Categories';
 import Loader from '../loader/Loader';
+import ProductModal from '../productModal/ProductModal';
 
 const Gallery = () => {
   const { cardList } = useContext(CatalogContext)
@@ -24,7 +25,7 @@ const Gallery = () => {
           ))
         }
       </div>}
-
+  <ProductModal/>
   </div>)
 }
 
