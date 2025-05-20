@@ -1,5 +1,5 @@
 import './productModal.css'
-import { useState, useContext, useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { CatalogContext } from '@/context/CatalogContext.jsx'
 
 
