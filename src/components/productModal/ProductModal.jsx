@@ -5,45 +5,34 @@ import { CatalogContext } from '@/context/CatalogContext.jsx'
 
 const ProductModal = () => {
 
-const { getProductById, currentId, setCurrentId } = useContext(CatalogContext)
-const [product, setProduct] = useState(null)
-const modalRef = useRef(null)
+  const { getProductById, currentId, setCurrentId } = useContext(CatalogContext)
+  const product = getProductById(currentId)
+  const modalRef = useRef(null)
 
-useEffect(() => {
+  useEffect(() => {
+    if (product && modalRef.current) modalRef.current.show()
+  }, [product])
 
-  if(!currentId) return
-  else {
-    const data = getProductById(currentId)
-    setProduct(data)
-
-    if(product && modalRef.current) modalRef.current.show()
+  const onClose = () => {
+    setCurrentId(null)
+    modalRef.current?.close()
+    return
   }
 
-}, [currentId])
-
-const onClose = () => {
-setCurrentId(null)
-setProduct(null)
-modalRef.current.close()
-return 
-}
-
-
-if(!product) return
-
-
-
-else return (
-<dialog id='product-modal-container' ref={modalRef}>
-<div id='product-detail'>
-<h3>hola</h3>
-<div>
+  if (!product) return null
   
-</div>
-<p>{product.name}</p>
-<button onClick={() => onClose()}><img src="/icons/close-menu.svg" alt="Cerrar modal" /></button>
-  </div>
-  </dialog>
+
+  return (
+    <dialog id='product-modal-container' ref={modalRef}>
+      <div id='product-detail'>
+        <h3>hola</h3>
+        <div>
+
+        </div>
+        <p>{product.name}</p>
+        <button onClick={() => onClose()}><img src="/icons/close-menu.svg" alt="Cerrar modal" /></button>
+      </div>
+    </dialog>
   )
 }
 

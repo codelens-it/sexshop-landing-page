@@ -6,7 +6,7 @@ export const CatalogContext = createContext(null)
 export const CatalogProvider = ({ children }) => {
 
   const [currentCategory, setCurrentCategory] = useState(null)
-  const [currentId, setCurrentId] = useState(1)
+  const [currentId, setCurrentId] = useState(null)
   const [cardList, setCardList] = useState([])
 
   const getProductCardList = () => {
