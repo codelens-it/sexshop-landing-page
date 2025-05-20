@@ -9,13 +9,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 #product-detail {
-  min-height: 800px;
+  height: 90%;
   width: 80%;
+  padding: 30px;
   max-width: 1200px;
   background-color: white;
   z-index: 1010;
   align-self: center;
+  overflow-y: auto;
 }
