@@ -21,7 +21,7 @@ const Gallery = () => {
       :
       <div className="catalog-container">
         {
-          cards.map((card) => (<GalleryCard key={card.id} productName={card.name} description={card.description} img={card.image} alt={card.imgAlt} />
+          cards.map((card) => (<GalleryCard key={card.id} productName={card.name} description={card.description} img={card.image} alt={card.imgAlt} id={card.id} />
           ))
         }
       </div>}

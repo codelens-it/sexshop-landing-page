@@ -1,8 +1,13 @@
 import './galleryCard.css'
+import { useContext } from 'react'
+import { CatalogContext } from '../../context/catalogContext'
 
-export const GalleryCard = ({ productName, description, img, alt }) => {
+export const GalleryCard = ({ productName, description, img, alt, id }) => {
+
+  const { setCurrentId } = useContext(CatalogContext)
+
   return (
-    <div className="gallery-card">
+    <div className="gallery-card" onClick={() => { setCurrentId(id)}}>
       <div className="card-img"><img src={img} alt={alt} /></div>
       <div className="card-description">
         <h4>{productName}</h4>

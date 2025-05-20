@@ -6,22 +6,20 @@ import { CatalogContext } from '@/context/CatalogContext.jsx'
 const ProductModal = () => {
 
 const { getProductById, currentId, setCurrentId } = useContext(CatalogContext)
-const [product, setProduct] = useState({})
+const [product, setProduct] = useState(null)
 const modalRef = useRef(null)
 
 useEffect(() => {
 
-  if(currentId) {
+  if(!currentId) return
+  else {
     const data = getProductById(currentId)
     setProduct(data)
-    console.log('producto', product)
-    modalRef.current.show()
+
+    if(product && modalRef.current) modalRef.current.show()
   }
 
-return
-
 }, [currentId])
-
 
 const onClose = () => {
 setCurrentId(null)
@@ -34,6 +32,7 @@ return
 if(!product) return
 
 
+
 else return (
 <dialog id='product-modal-container' ref={modalRef}>
 <div id='product-detail'>
@@ -41,7 +40,7 @@ else return (
 <div>
   
 </div>
-<p>description</p>
+<p>{product.name}</p>
 <button onClick={() => onClose()}><img src="/icons/close-menu.svg" alt="Cerrar modal" /></button>
   </div>
   </dialog>
