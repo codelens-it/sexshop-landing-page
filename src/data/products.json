@@ -14,8 +14,8 @@
 "price": "26000",
 "inStock": true,
 "images": [
-  { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
-  { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+  { "src": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+  { "src": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
 ],
 "category": ["anal"]
 },
@@ -35,8 +35,8 @@
   "price": "35000",
   "inStock": true,
   "images": [
-    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal del vibrador" },
-    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria del vibrador" }
+    { "src": "/imgs/vibrador1.svg", "alt": "Imagen principal del vibrador" },
+    { "src": "/imgs/vibrador2.svg", "alt": "Imagen secundaria del vibrador" }
   ],
   "category": ["vibradores"]
 },
@@ -56,8 +56,8 @@
   "price": "1200",
   "inStock": true,
   "images": [
-    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
-    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+    { "src": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "src": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["lubricantes"]
 },
@@ -73,8 +73,8 @@
   "price": "4500",
   "inStock": true,
   "images": [
-    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
-    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+    { "src": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "src": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["lenceria"]
 },
@@ -94,8 +94,8 @@
   "price": "32000",
   "inStock": true,
   "images": [
-    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
-    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+    { "src": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "src": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["consoladores", "anal"]
 },
@@ -115,8 +115,8 @@
   "price": "15000",
   "inStock": true,
   "images": [
-    { "img": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
-    { "img": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
+    { "src": "/imgs/vibrador1.svg", "alt": "Imagen principal"},
+    { "src": "/imgs/vibrador2.svg", "alt": "Imagen secundaria"}
   ],
   "category": ["accesorios"]
 }

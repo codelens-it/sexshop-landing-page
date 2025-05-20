@@ -1,6 +1,7 @@
 import './productModal.css'
 import { useContext, useEffect, useRef } from 'react'
 import { CatalogContext } from '@/context/CatalogContext.jsx'
+import ImageCarousel from '@/components/imageCarousel/ImageCarousel.jsx'
 
 
 const ProductModal = () => {
@@ -26,9 +27,7 @@ const ProductModal = () => {
     <dialog id='product-modal-container' ref={modalRef}>
       <div id='product-detail'>
         <h3>hola</h3>
-        <div>
-
-        </div>
+        <ImageCarousel images={product.images}/>
         <p>{product.name}</p>
         <button onClick={() => onClose()}><img src="/icons/close-menu.svg" alt="Cerrar modal" /></button>
       </div>

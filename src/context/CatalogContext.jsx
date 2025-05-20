@@ -15,7 +15,7 @@ export const CatalogProvider = ({ children }) => {
         id: product.id,
         name: product.name,
         description: product.description,
-        image: product.images[0].img,
+        image: product.images[0].src,
         imgAlt: product.images[0].alt,
         category: product.category
       }
