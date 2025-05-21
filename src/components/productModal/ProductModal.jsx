@@ -27,6 +27,9 @@ const ProductModal = () => {
   return (
     <dialog id='product-modal-container' ref={modalRef}>
       <div id='product-detail'>
+        <button className='product-modal-close-btn' onClick={() => onClose()}>
+        <img src="/icons/close-menu.svg" alt="Cerrar modal" />
+      </button>
         <h3>{product.name}</h3>
         <ImageCarousel images={product.images}/>
         <p>{product.description}</p>
@@ -49,7 +52,7 @@ const ProductModal = () => {
                 <span>Talles disponibles:</span>
                 <ul>
                   {product.measurements.sizes?.map((size) => {
-                    return <li>{size}</li>
+                    return <li key={size}>{size}</li>
                   })}
                 </ul>
               </div>
@@ -68,9 +71,6 @@ const ProductModal = () => {
           </div>
         </AccordionItem>
       </div>
-      <button onClick={() => onClose()}>
-        <img src="/icons/close-menu.svg" alt="Cerrar modal" />
-      </button>
     </dialog>
   )
 }

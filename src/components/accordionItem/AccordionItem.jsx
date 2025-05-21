@@ -5,7 +5,7 @@ const AccordionItem = ({title, children}) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return(
-    <div lassName='accordion-item-container' onClick={() => setIsOpen(!isOpen)}>
+    <div className='accordion-item-container' onClick={() => setIsOpen(!isOpen)}>
       <div className='accordion-item-title'>
         <span>{title}</span>
         <button className='accordion-item-expand-btn'>
