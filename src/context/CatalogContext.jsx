@@ -6,6 +6,7 @@ export const CatalogContext = createContext(null)
 export const CatalogProvider = ({ children }) => {
 
   const [currentCategory, setCurrentCategory] = useState(null)
+  const [currentId, setCurrentId] = useState(null)
   const [cardList, setCardList] = useState([])
 
   const getProductCardList = () => {
@@ -14,7 +15,7 @@ export const CatalogProvider = ({ children }) => {
         id: product.id,
         name: product.name,
         description: product.description,
-        image: product.images[0].img,
+        image: product.images[0].src,
         imgAlt: product.images[0].alt,
         category: product.category
       }
@@ -64,7 +65,9 @@ useEffect(() => {
         getProductCardList,
         currentCategory,
         setCurrentCategory,
-        cardList
+        cardList,
+        currentId,
+        setCurrentId
       }}>
       {children}
     </CatalogContext.Provider>

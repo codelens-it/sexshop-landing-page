@@ -4,6 +4,7 @@ import { CatalogContext } from '@/context/CatalogContext'
 import { GalleryCard } from "@/components/GalleryCard/GalleryCard";
 import { Categories } from '../categories/Categories';
 import Loader from '../loader/Loader';
+import ProductModal from '../productModal/ProductModal';
 
 const Gallery = () => {
   const { cardList } = useContext(CatalogContext)
@@ -20,11 +21,11 @@ const Gallery = () => {
       :
       <div className="catalog-container">
         {
-          cards.map((card) => (<GalleryCard key={card.id} productName={card.name} description={card.description} img={card.image} alt={card.imgAlt} />
+          cards.map((card) => (<GalleryCard key={card.id} productName={card.name} description={card.description} src={card.image} alt={card.imgAlt} id={card.id} />
           ))
         }
       </div>}
-
+  <ProductModal/>
   </div>)
 }
 
