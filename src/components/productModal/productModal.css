@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1000px;
   overflow-y: auto;
   border-radius: 18px;
   position: relative;
@@ -43,6 +43,12 @@
   border: none;
   background-color: transparent;
   align-self: flex-end;
+
+}
+
+.product-modal-close-btn img {
+  height: 25px;
+  width: 25px;
 }
 
 .product-modal-close-btn img {
