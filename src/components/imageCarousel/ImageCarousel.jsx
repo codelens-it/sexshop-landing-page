@@ -23,7 +23,7 @@ const ImageCarousel = ({ images }) => {
             onClick={() => { onSelect(images[i], i) }}
             onMouseOver={() => { onSelect(images[i], i) }}
             key={'key' + i}
-            className={`image-carousel-item ${selectedIndex === i && 'selected'}`}
+            className={`image-carousel-item ${selectedIndex === i && 'selectedImage'}`}
           >
             <img src={img.src} alt={img.alt} />
           </div>

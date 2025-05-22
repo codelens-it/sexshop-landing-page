@@ -26,7 +26,8 @@ const ProductModal = () => {
 
   return (
     <dialog id='product-modal-container' ref={modalRef}>
-      <div id='product-detail'>
+      <div className='product-detail'>
+        <div className='product-wrapper'>
         <button className='product-modal-close-btn' onClick={() => onClose()}>
         <img src="/icons/close-menu.svg" alt="Cerrar modal" />
       </button>
@@ -70,6 +71,7 @@ const ProductModal = () => {
             <span>{product.inStock ? "Disponible" : "Sin Stock"}</span>
           </div>
         </AccordionItem>
+      </div>
       </div>
     </dialog>
   )
