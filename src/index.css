@@ -40,8 +40,9 @@ Declaración de fuente:
 
 :root {
   --color-bg: #000000;            /* Fondo principal oscuro */
-  --fucsia-transparent:  rgba(255, 0, 111, 0.25)   ;
-  --fucsia-variant: rgba(255, 0, 111, 0.2);
+  --fucsia-transparent:  #ff006f40   ;
+  --fucsia-variant: #ff006f33;
+  --pink: #FF006F;
   --color-text: #ffffff;          /* Texto principal */
   --color-content: #bfbfbf;       /* Texto secundario */
   --font-family-text: 'Aboreto';  /*Fuente para títulos y navbar*/
@@ -80,6 +81,12 @@ h2 {
 h3 {
   font-family: var(--font-family-text);
   font-size: var(--font-size-h3);
+  color: var(--color-text);
+}
+
+h4 {
+  font-family: var(--font-family-content);
+  font-size: var(--font-size-content);
   color: var(--color-text);
 }
 
