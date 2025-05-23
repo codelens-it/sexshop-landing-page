@@ -36,10 +36,10 @@ function App() {
         ) : (
           <>
             <Hero />
-            <About />
             <CatalogProvider>
               <Gallery />
             </CatalogProvider>
+            <About />
             <Slider
               autoPlay={true}
               interval={4000}
