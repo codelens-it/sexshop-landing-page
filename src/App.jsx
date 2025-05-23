@@ -2,6 +2,7 @@ import { useState, Suspense, lazy, useEffect } from 'react'
 import './App.css'
 import Navbar from '@/components/navbar/Navbar'
 import Loader from '@/components/loader/Loader';
+import Seo from '@/components/seoMeta/SeoMeta';
 
 const Hero = lazy(() => import('./components/hero/Hero'));
 const About = lazy(() => import('./components/about/About'));
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div>
+      <Seo />
       <Navbar/>
       <Suspense fallback={null}>
         {showLoader ? (
@@ -46,4 +48,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
