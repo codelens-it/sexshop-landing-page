@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from '@/components/navbar/Navbar'
 import Loader from '@/components/loader/Loader';
 import { CatalogProvider } from '@/context/CatalogContext'
+import Seo from '@/components/seoMeta/SeoMeta';
 
 const Hero = lazy(() => import('./components/hero/Hero'));
 const About = lazy(() => import('./components/about/About'));
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div>
+      <Seo />
       <Navbar />
       <Suspense fallback={null}>
         {showLoader ? (
@@ -34,10 +36,10 @@ function App() {
         ) : (
           <>
             <Hero />
-            <About />
             <CatalogProvider>
               <Gallery />
             </CatalogProvider>
+            <About />
             <Slider
               autoPlay={true}
               interval={4000}
@@ -51,4 +53,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
