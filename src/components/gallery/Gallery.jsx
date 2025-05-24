@@ -11,7 +11,7 @@ const Gallery = () => {
   const cardData = cardList
   const cards = cardData.data
 
-  return (<div className="section gallery">
+  return (<div id="catalogo" className="section gallery">
     <h2>Tu próxima aventura comienza acá</h2>
     <span>Explorá una selección íntima pensada para despertar tus sentidos. Productos únicos, atención discreta y placer a tu medida.</span>
     <Categories />

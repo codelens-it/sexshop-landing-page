@@ -79,7 +79,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className="about section" id="about" ref={aboutRef}>
+        <section className="about section" id="nosotros" ref={aboutRef}>
             <h2 ref={h2Ref}>Sobre Nosotros</h2>
             <div className="about-container">
                 <picture className="about-img" ref={imgRef}>

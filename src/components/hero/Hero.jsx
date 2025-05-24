@@ -50,7 +50,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="hero" id="home" ref={heroRef}>
+        <section className="hero" id="inicio" ref={heroRef}>
             <div className="hero-overlay"></div>
                 <div className="hero-container">
                 <h1 ref={titleRef}>Descubre el placer sin límites</h1>
