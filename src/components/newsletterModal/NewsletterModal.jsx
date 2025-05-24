@@ -8,13 +8,11 @@ const NewsletterModal = () => {
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
-        const dismissed = sessionStorage.getItem("newsletter-dismissed");
-        if (!dismissed) setVisible(true);
+        setVisible(true);
     }, []);
 
     const handleClose = () => {
         setVisible(false);
-        sessionStorage.setItem("newsletter-dismissed", "true");
     };
 
     const handleSubmit = async (e) => {
