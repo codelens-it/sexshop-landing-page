@@ -51,7 +51,7 @@ Declaración de fuente:
   --font-size-subtext: clamp(1.5625rem, 1.4309rem + 0.6579vw, 2.5rem); 
   --font-size-h3:  clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem);
   --font-size-content: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem); 
-  --font-size-link: clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem); 
+  --font-size-social: clamp(0.875rem, 0.85rem + 0.1vw, 1rem); 
 
 }
 
