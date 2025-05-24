@@ -68,7 +68,7 @@ const ProductModal = () => {
             }).format(product.price)
             }</span>
             <br/>
-            <span>{product.inStock ? "Disponible" : "Sin Stock"}</span>
+            <span className={product.inStock ? "available" : "not-available"}>{product.inStock ? "Disponible" : "Sin Stock"}</span>
           </div>
         </AccordionItem>
       </div>

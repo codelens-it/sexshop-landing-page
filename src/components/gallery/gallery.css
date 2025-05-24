@@ -1,5 +1,5 @@
 .gallery {
-  background-image: url('/public/imgs/gallery-background.svg');
+  background-image: url('/imgs/gallery-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex; 

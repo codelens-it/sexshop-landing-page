@@ -19,7 +19,6 @@
   align-items: center;
   max-width: 1000px;
   overflow-y: auto;
-  border-radius: 18px;
   position: relative;
 }
 
@@ -53,4 +52,12 @@
 
 .product-modal-close-btn img {
   filter: invert(1)
+}
+
+.available {
+  color: green;
+}
+
+.not-available {
+  color: red;
 }
