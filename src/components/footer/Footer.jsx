@@ -20,10 +20,10 @@ const Footer = () => {
         </section>
         <nav className="footer-navbar">
           <ul className="menu-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
       </div>
