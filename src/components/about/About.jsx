@@ -15,7 +15,7 @@ const About = () => {
     const p2Ref = useRef(null);
     const btnRef = useRef(null);
 
-    useEffect(() => {
+   useEffect(() => {
         gsap.fromTo(h2Ref.current,
             { x: -100, opacity: 0 },
             {
@@ -77,8 +77,6 @@ const About = () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);
-
-
 
     return (
         <section className="about section" id="about" ref={aboutRef}>
