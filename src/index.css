@@ -40,8 +40,9 @@ Declaración de fuente:
 
 :root {
   --color-bg: #000000;            /* Fondo principal oscuro */
-  --fucsia-transparent:  rgba(255, 0, 111, 0.25)   ;
-  --fucsia-variant: rgba(255, 0, 111, 0.2);
+  --fucsia-transparent:  #ff006f40   ;
+  --fucsia-variant: #ff006f33;
+  --pink: #FF006F;
   --color-text: #ffffff;          /* Texto principal */
   --color-content: #bfbfbf;       /* Texto secundario */
   --font-family-text: 'Aboreto';  /*Fuente para títulos y navbar*/
@@ -56,11 +57,11 @@ Declaración de fuente:
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
   background-color: var(--color-bg);
 }
 
@@ -68,6 +69,7 @@ h1 {
   font-family: var(--font-family-text);
   font-size: var(--font-size-text);
   color: var(--color-text);
+  font-weight: 400;
 }
 
 h2 {
@@ -79,6 +81,12 @@ h2 {
 h3 {
   font-family: var(--font-family-text);
   font-size: var(--font-size-h3);
+  color: var(--color-text);
+}
+
+h4 {
+  font-family: var(--font-family-content);
+  font-size: var(--font-size-content);
   color: var(--color-text);
 }
 
@@ -96,31 +104,20 @@ span {
 
 
 a {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-text);
   font-size: var(--font-size-link);
   color: var(--color-content);
   text-decoration: none;
 }
 
-i {
+button img {
   height: 40px;
   width: 40px;
 }
 
-/*MOVER*/
-button {
-  font-family: var(--font-family-content);
-  font-size: var(--font-size-content);
-  color: var(--color-content);
-  border-radius: 20px;
-  /*filter: drop-shadow(3px 5px 5px var(--color-bg));*/
-  background-color: var(--color-bg);
-  border:none;
-  padding: 17px 33px;
-}
-
-button.variant-btn {
-  background-color: var(--fucsia-variant);
+.icon {
+  height: 40px;
+  width: 40px;
 }
 
 .item-center {
