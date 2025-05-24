@@ -2,16 +2,16 @@ import './gallery.css'
 import { useContext } from "react";
 import { CatalogContext } from '@/context/CatalogContext'
 import { GalleryCard } from "@/components/GalleryCard/GalleryCard";
-import { Categories } from '../categories/Categories';
-import Loader from '../loader/Loader';
-import ProductModal from '../productModal/ProductModal';
+import { Categories } from '@/components/categories/Categories';
+import Loader from '@/components/loader/Loader';
+import ProductModal from '@/components/productModal/ProductModal';
 
 const Gallery = () => {
   const { cardList } = useContext(CatalogContext)
   const cardData = cardList
   const cards = cardData.data
 
-  return (<div className="section gallery">
+  return (<div id="catalogo" className="section gallery">
     <h2>Tu próxima aventura comienza acá</h2>
     <span>Explorá una selección íntima pensada para despertar tus sentidos. Productos únicos, atención discreta y placer a tu medida.</span>
     <Categories />

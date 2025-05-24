@@ -3,8 +3,8 @@ footer {
 }
 
 .footer-logo-container {
-  height: 180px;
-  width: 180px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -15,7 +15,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 50px;
+  padding: 20px 50px;
 }
 
 .footer-first-row > * {
@@ -24,7 +24,7 @@ footer {
 
 .footer-second-row {
   text-align: center;
-  padding: 30px;
+  padding: 15px 30px;
 }
 
 .footer-logo-slogan {
@@ -45,16 +45,21 @@ footer {
 .social-links {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .footer-social{
   margin: 0 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-social:hover{
+  transform: translateY(-5px);
 }
 
 .footer-navbar .menu-list {
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 
 @media (min-width: 768px ) {
