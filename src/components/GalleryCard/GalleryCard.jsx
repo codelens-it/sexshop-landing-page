@@ -1,6 +1,6 @@
 import './galleryCard.css'
 import { useContext } from 'react'
-import { CatalogContext } from '../../context/catalogContext'
+import { CatalogContext } from '@/context/catalogContext'
 
 export const GalleryCard = ({ productName, description, src, alt, id }) => {
 
