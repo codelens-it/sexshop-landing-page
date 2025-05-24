@@ -40,7 +40,7 @@ Declaración de fuente:
 
 :root {
   --color-bg: #000000;            /* Fondo principal oscuro */
-  --fucsia-transparent:  #ff006f40   ;
+  --fucsia-transparent:  #ff006f40;
   --fucsia-variant: #ff006f33;
   --pink: #FF006F;
   --color-text: #ffffff;          /* Texto principal */
